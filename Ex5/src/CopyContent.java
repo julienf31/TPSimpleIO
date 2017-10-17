@@ -7,7 +7,7 @@ public class CopyContent {
         InputStreamReader file = new InputStreamReader(CopyContent.class.getResourceAsStream("./file1.txt"));
 
         try(BufferedReader reader = new BufferedReader(file);){ //on initialise le bufferedReader qui va lire le fichier
-            try(FileWriter fileWriter = new FileWriter(new File("./TPSimpleIO/Ex5/resources/file2.txt"));){    //on initialise le filewriter qui va écrire dans un second fichier
+            try(FileWriter fileWriter = new FileWriter(new File("./Ex5/resources/file2.txt"));){    //on initialise le filewriter qui va écrire dans un second fichier
 
                 while (reader.ready()){ // on lit le fichier
                     fileWriter.write(reader.readLine()+"\n");    //on ecris ce que le reader lit
