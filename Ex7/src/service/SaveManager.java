@@ -1,6 +1,6 @@
-package better.service;
+package service;
 
-import better.domain.*;
+import domain.*;
 
 import java.io.*;
 import java.util.List;

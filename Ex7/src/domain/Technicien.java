@@ -1,4 +1,4 @@
-package better.domain;
+package domain;
 
 public class Technicien extends Employee {
 

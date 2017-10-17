@@ -1,6 +1,6 @@
-package better.service;
+package service;
 
-import better.domain.Employee;
+import domain.Employee;
 
 import java.util.ArrayList;
 import java.util.List;

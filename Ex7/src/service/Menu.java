@@ -1,6 +1,4 @@
-package better.service;
-
-import better.domain.*;
+package service;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package better.domain;
+package domain;
 
 public class ManutARisque extends Manutentionnaire implements ARisque {
 

@@ -1,5 +1,5 @@
-package better.service;
-import better.domain.*;
+package service;
+import domain.*;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

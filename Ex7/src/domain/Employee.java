@@ -1,4 +1,4 @@
-package better.domain;
+package domain;
 
 import java.io.Serializable;
 

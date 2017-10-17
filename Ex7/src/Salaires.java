@@ -1,9 +1,6 @@
 package better;
 
-import better.domain.*;
-import better.service.*;
-
-import java.io.*;
+import service.*;
 
 public class Salaires {
 
