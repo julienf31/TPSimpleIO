@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class PrintIntoFile {
 
-    static File file = new File("./TPSimpleIO/Ex4/resources/file.txt");
+    static File file = new File("./Ex4/resources/file.txt");
 
     public static void main(String[] args){
         String s = "";
