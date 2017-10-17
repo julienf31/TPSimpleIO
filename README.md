@@ -16,3 +16,7 @@ Dans les paramétres du projet :
 1 - Project SDK : 1.8
 
 2 - Project language level : 8
+
+
+
+Certains fichiers (file.txt) sont présents pour que les directory s'ajoutent sur le git mais ne sont pas utilisés
