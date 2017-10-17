@@ -7,7 +7,7 @@ import java.util.List;
 public class SaveManager {
 
     public void saveEmployee(List<Employee> listEmp){
-        try(FileOutputStream fileWriter = new FileOutputStream(new File("./TPSimpleIO/Ex7/save/save.txt"));
+        try(FileOutputStream fileWriter = new FileOutputStream(new File("./Ex7/save/save.txt"));
         ObjectOutputStream objectWriter = new ObjectOutputStream(fileWriter)){    //on initialise le filewriter qui va écrire dans un second fichier
 
             for(Employee employee:listEmp){ // on lit la liste
@@ -23,7 +23,7 @@ public class SaveManager {
      public void loadEmployee(Personnel p){
         Employee emp;
         try {
-            FileInputStream file = new FileInputStream("./TPSimpleIO/Ex7/save/save.txt");
+            FileInputStream file = new FileInputStream("./Ex7/save/save.txt");
             ObjectInputStream objectReader = new ObjectInputStream(file);
             while(file.available() > 0) { //tant que le fichier n'est pas vide (pour eviter EOFException)
                 emp = (Employee) objectReader.readObject();
