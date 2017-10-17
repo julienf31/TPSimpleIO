@@ -18,4 +18,24 @@ public class SaveManager {
             e.printStackTrace();
         }
     }
+
+    //fonction de récupératon de sauvegarde
+     public void loadEmployee(Personnel p){
+        Employee emp;
+        try {
+            FileInputStream file = new FileInputStream("./TPSimpleIO/Ex7/save/save.txt");
+            ObjectInputStream objectReader = new ObjectInputStream(file);
+            while(file.available() > 0) { //tant que le fichier n'est pas vide (pour eviter EOFException)
+                emp = (Employee) objectReader.readObject();
+                p.ajouterEmploye(emp);
+            }
+            objectReader.close();
+        } catch (FileNotFoundException e) {
+            System.out.println("Aucune sauvegarde trouvée");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 }

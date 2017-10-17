@@ -19,9 +19,10 @@ public class CopyImage {
 
         try {
             //Récupération de l'image via URL
-            BufferedImage imgURL =  ImageIO.read(new URL(url));
+            BufferedImage img =  ImageIO.read(new URL(url));
             //Ecriture de l'image dans le dossier de ressources
-            ImageIO.write(imgURL, "jpg", new File("./TPSimpleIO/Ex6/Images/"+name+".jpg"));
+
+            ImageIO.write(img, "jpg", new File("./TPSimpleIO/Ex6/Images/"+name+".jpg"));
 
         } catch (IOException e) {
             e.printStackTrace();

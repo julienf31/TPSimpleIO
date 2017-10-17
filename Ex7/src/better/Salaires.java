@@ -15,7 +15,7 @@ public class Salaires {
 
     public static void main(String[] args) {
 
-        loadEmployee(); // chargement des employés
+        saver.loadEmployee(p); // chargement des employés
         launch(p);
         saver.saveEmployee(p.employees); // lors de la sortie du programme on enregistre les employés dans le fichier
     }
@@ -57,23 +57,4 @@ public class Salaires {
 
     }
 
-    //fonction de récupératon de sauvegarde
-    static public void loadEmployee(){
-        Employee emp;
-            try {
-                FileInputStream file = new FileInputStream("./TPSimpleIO/Ex7/save/save.txt");
-                ObjectInputStream objectReader = new ObjectInputStream(file);
-                while(file.available() > 0) { //tant que le fichier n'est pas vide (pour eviter EOFException)
-                    emp = (Employee) objectReader.readObject();
-                    p.ajouterEmploye(emp);
-                }
-                objectReader.close();
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-    }
 }
